@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./second-style.css" />
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <h1>DICE GAME</h1>
+    <section id="container">
+      <a class="buttons" href="./second.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        START
+      </a>
+      <a data-modal-target="#modal" class="buttons" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        GAME RULES
+      </a>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">DICE GAME</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        The game has two players playing in rounds. <br />
+        In each turn player rolls a dice as many times as he wishes. <br />
+        Each result get added to his round score but
+        <span class="first-span"
+          >if the player rolls a 1 all his round score get lost.</span
+        >
+        After that, its the next player turn. The player <br />
+        can chouse <span class="second">HOLD</span> which means that his round
+        score add to his <span class="second">GLOBLE</span> <br />
+        score.
+        <span class="winner"
+          >The first player to reach 100 points on
+          <span class="second">GLOBLE </span> score wins the game.</span
+        >
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>

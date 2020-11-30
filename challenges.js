@@ -42,6 +42,7 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
     // Saving the previous dice roll on a variable
     prevDiceRoll = dice1;
   }
+  bell();
 });
 
 // Functionality that allows to accumulate points ('hold')
